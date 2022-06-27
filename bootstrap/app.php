@@ -74,11 +74,10 @@ $app->configure('app');
 | route or middleware that'll be assigned to some specific routes.
 |
 */
-/*
+
 $app->middleware([
-     App\Http\Middleware\AuthenticateAccess::class,
+    App\Http\Middleware\AuthenticateAccess::class,
 ]);
-*/
 
 $app->routeMiddleware([
 'auth' => App\Http\Middleware\Authenticate::class,
